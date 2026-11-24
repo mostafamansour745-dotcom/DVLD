@@ -8,16 +8,17 @@
 [![SQL Server](https://img.shields.io/badge/SQL_Server-CC292B?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)](https://www.microsoft.com/en-us/sql-server/)
 [![ADO.NET](https://img.shields.io/badge/ADO.NET-Direct_Data_Access-00599C?style=for-the-badge&logo=dotnet&logoColor=white)](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/)
 [![Microsoft.Data.SqlClient](https://img.shields.io/badge/SqlClient-v7.0.2-412BD4?style=for-the-badge&logo=nuget&logoColor=white)](https://www.nuget.org/packages/Microsoft.Data.SqlClient)
-[![Architecture](https://img.shields.io/badge/Architecture-3--Tier-orange?style=for-the-badge)](#-05-architecture--layer-responsibilities)
+[![Architecture](https://img.shields.io/badge/Architecture-3--Tier-orange?style=for-the-badge)](#architecture)
 
 **An enterprise-grade, multi-tier desktop management system built in C# (.NET 10) and Windows Forms for driving license administration, applicant testing workflows, and license lifecycle governance.**
 
-[Overview](#-02-project-overview) • [Key Features](#-03-key-features) • [System Modules](#-04-system-modules) • [Architecture](#-05-architecture--layer-responsibilities) • [Database Design](#-06-database-design--entity-relationships) • [Engineering Highlights](#-07-technical-highlights--engineering-decisions) • [Screenshots](#-12-screenshots) • [Author](#-13-author--contact)
+[Overview](#overview) • [Key Features](#key-features) • [System Modules](#system-modules) • [Architecture](#architecture) • [Database Design](#database-design) • [Technical Highlights](#technical-highlights) • [Project Structure](#project-structure) • [Tech Stack](#technology-stack) • [Getting Started](#getting-started) • [Screenshots](#screenshots) • [Author](#author)
 
 </div>
 
 ---
 
+<a id="overview"></a>
 ## 📖 02. Project Overview
 
 The **Driving & Vehicle License Department (DVLD)** system is a mission-critical desktop enterprise application engineered to automate, govern, and streamline the complete operational lifecycle of driver licensing. Traditional licensing departments frequently struggle with manual record keeping, fragmented testing workflows, human error in fee assessments, and the risk of fraudulent test passing or license issuance.
@@ -30,6 +31,7 @@ The **Driving & Vehicle License Department (DVLD)** system is a mission-critical
 
 ---
 
+<a id="key-features"></a>
 ## ✨ 03. Key Features
 
 ### 👤 People & Demographics Registry
@@ -68,6 +70,7 @@ The **Driving & Vehicle License Department (DVLD)** system is a mission-critical
 
 ---
 
+<a id="system-modules"></a>
 ## 🧩 04. System Modules
 
 The application is structured into specialized, domain-focused modules:
@@ -83,6 +86,7 @@ The application is structured into specialized, domain-focused modules:
 
 ---
 
+<a id="architecture"></a>
 ## 🏗️ 05. Architecture & Layer Responsibilities
 
 DVLD strictly implements the classic **3-Tier Architecture**, enforcing unidirectional dependencies and strict Separation of Concerns (SoC).
@@ -245,6 +249,7 @@ public static int AddNewLicense(int ApplicationID, int DriverID, int LicenseClas
 
 ---
 
+<a id="database-design"></a>
 ## 🗄️ 06. Database Design & Entity Relationships
 
 The underlying relational schema is normalized to **Third Normal Form (3NF)** with referential integrity enforced via foreign key constraints and primary keys.
@@ -416,6 +421,7 @@ The database utilizes denormalized SQL views to optimize read performance for Da
 
 ---
 
+<a id="technical-highlights"></a>
 ## ⚙️ 07. Technical Highlights & Engineering Decisions
 
 ### 1. Object-Oriented Domain Modeling & Inheritance
@@ -448,6 +454,7 @@ User interface elements are built as modular User Controls (`ctrlPersonCardWithF
 
 ---
 
+<a id="project-structure"></a>
 ## 📁 08. Project Structure
 
 ```text
@@ -560,6 +567,7 @@ DVLD_Project/
 
 ---
 
+<a id="technology-stack"></a>
 ## 🛠️ 09. Technology Stack
 
 | Layer / Category | Technology | Version | Purpose |
@@ -574,6 +582,7 @@ DVLD_Project/
 
 ---
 
+<a id="getting-started"></a>
 ## 🚀 10. Getting Started
 
 Follow these instructions to set up the local development environment and run the DVLD system.
@@ -588,8 +597,8 @@ Follow these instructions to set up the local development environment and run th
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/mostafamansour745-dotcom/DVLD_3TierArc.git
-cd DVLD_3TierArc
+git clone https://github.com/mostafamansour745-dotcom/DVLD.git
+cd DVLD
 ```
 
 #### 2. Configure the Database
@@ -633,6 +642,7 @@ dotnet run --project DVLD/DVLD.csproj
 
 ---
 
+<a id="configuration"></a>
 ## 🔐 11. Configuration & Security Best Practices
 
 ### Connection String Security
@@ -645,6 +655,7 @@ dotnet run --project DVLD/DVLD.csproj
 
 ---
 
+<a id="screenshots"></a>
 ## 🖼️ 12. Screenshots
 
 <div align="center">
@@ -659,6 +670,7 @@ dotnet run --project DVLD/DVLD.csproj
 
 ---
 
+<a id="author"></a>
 ## 👨‍💻 13. Author & Contact
 
 **Mostafa Mansour**  
@@ -667,7 +679,7 @@ dotnet run --project DVLD/DVLD.csproj
 - 🌐 **GitHub:** [@mostafamansour745-dotcom](https://github.com/mostafamansour745-dotcom)
 - 💼 **LinkedIn:** [Mostafa Mansour](https://www.linkedin.com/in/mostafa-mansour-1ab050381)
 - 📧 **Email:** [mostafamansour745@gmail.com](mailto:mostafamansour745@gmail.com)
-- 📂 **Project Repository:** [DVLD_3TierArc](https://github.com/mostafamansour745-dotcom/DVLD_3TierArc)
+- 📂 **Project Repository:** [DVLD](https://github.com/mostafamansour745-dotcom/DVLD)
 
 ---
 
